@@ -33,7 +33,12 @@ const quizReducer = (state, action) => {
             };
 
             case "CHANGE_QUESTION":
-                const nesQuestion = state.currentQuestion + 1
+                const nesQuestion = state.currentQuestion + 1;
+
+                return {
+                    ...state,
+                    currentQuestion: nesQuestion,
+                }
 
         default:
             return state;
