@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { QuizContext } from "../context/quiz";
+import './Question.css';
 
 const Question = () => {
     const [quizState, dispatch] = useContext(QuizContext);
@@ -7,7 +8,7 @@ const Question = () => {
     const currentQuestion = quizState.questions[quizState.currentQuestion]
 
   return (
-    <div>
+    <div id="question">
       <p>Pergunta {quizState.currentQuestion + 1} a {quizState.questions.length}</p>
       <h2>{currentQuestion.question}</h2>
       <div id="options-container">

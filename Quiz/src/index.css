@@ -11,7 +11,7 @@
 body, html {
   min-height: 100vh;
   height: 100%;
-  background-color: #1c1c1c;
+  background-image: linear-gradient(to right,#1c1c1c, rgba(0, 0, 0, 0.571));
 }
 
 img {
