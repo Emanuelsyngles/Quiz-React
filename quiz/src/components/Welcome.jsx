@@ -7,7 +7,7 @@ import './Welcome.css'
 
 const Welcome = () => {
 
-  const quizState = useContext(QuizContext);
+  const [quizState] = useContext(QuizContext);
 
   console.log(quizState)
 
