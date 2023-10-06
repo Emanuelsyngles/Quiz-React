@@ -30,7 +30,10 @@ const quizReducer = (state, action) => {
             return {
                 ...state,
                 questions: reorderedQuestions,
-            }
+            };
+
+            case "CHANGE_QUESTION":
+                const nesQuestion = state.currentQuestion + 1
 
         default:
             return state;
