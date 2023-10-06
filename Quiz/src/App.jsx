@@ -1,6 +1,5 @@
 //react, componentes, estáticos
 import { useContext } from "react";
-
 import Welcome from './components/Welcome'
 
 import Question from "./components/Question";
