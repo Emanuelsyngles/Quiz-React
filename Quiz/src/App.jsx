@@ -1,5 +1,5 @@
 //react, componentes, estáticos
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import Welcome from './components/Welcome'
 
 import Question from "./components/Question";
@@ -10,6 +10,10 @@ import "./App.css";
 
 function App() {
   const [quizState, dispatch] = useContext(QuizContext);
+
+  useEffect(() => {
+    // embaralhar as perguntas
+  }, [])
 
   return (
     <div className="App">
