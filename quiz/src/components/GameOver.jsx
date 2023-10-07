@@ -13,7 +13,7 @@ const GameOver = () => {
       <p>Pontuação: x</p>
       <p>Você acertou y de z Perguntas.</p>
       <img src={welldone} alt="Fim do Quiz" />
-      <button>Reiniciar</button>
+      <button className="btn1">Reiniciar</button>
     </div>
   );
 }
