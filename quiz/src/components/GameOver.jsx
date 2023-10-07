@@ -6,14 +6,15 @@ import welldone from '../img/welldone.svg'
 import './GameOver.css'
 
 const GameOver = () => {
+  const [quizState, dispatch] = useContext(QuizContext);
   return (
     <div id="gameover">
       
       <h2>Fim de Jogo!</h2>
-      <p>Pontuação: x</p>
-      <p>Você acertou y de z Perguntas.</p>
+      <p>Pontuação: {quizState.score}</p>
+      <p>Você acertou {quizState.score} de {quizState.questions.length}{" "} Perguntas.</p>
       <img src={welldone} alt="Fim do Quiz" />
-      <button className="btn1">Reiniciar</button>
+      <button className="btn1" onClick={() => dispatch({type: "NEW_GAME"})}>Reiniciar</button>
     </div>
   );
 }
