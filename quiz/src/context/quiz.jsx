@@ -33,11 +33,17 @@ const quizReducer = (state, action) => {
             };
 
             case "CHANGE_QUESTION":
-                const nesQuestion = state.currentQuestion + 1;
+                const nextQuestion = state.currentQuestion + 1;
+                let endGame = false
+
+                if(!questions[nextQuestion ]) {
+                    endGame = true;
+                }
 
                 return {
                     ...state,
-                    currentQuestion: nesQuestion,
+                    currentQuestion: nextQuestion,
+                    gameStage
                 }
 
         default:
