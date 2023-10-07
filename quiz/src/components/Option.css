@@ -1,3 +1,8 @@
 .option {
-    
+    background-color: rgb(77, 27, 124);
+    border-radius: 1rem;
+    padding: .2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: .4s;
 }
