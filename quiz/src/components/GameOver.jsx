@@ -10,6 +10,9 @@ const GameOver = () => {
     <div id="gameover">
       
       <h2>Fim de Jogo!</h2>
+      <p>Pontuação: x</p>
+      <p>Você acertou y de z Perguntas.</p>
+      <img src={welldone} alt="#" />
     </div>
   );
 }
