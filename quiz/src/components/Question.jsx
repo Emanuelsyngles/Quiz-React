@@ -12,7 +12,9 @@ const Question = () => {
       <p>Pergunta {quizState.currentQuestion + 1} a {quizState.questions.length}</p>
       <h2>{currentQuestion.question}</h2>
       <div id="options-container">
-        <p>Opções</p>
+        {currentQuestion.options.map((option) =>(
+          <option />
+        ))}
       </div>
       <button onClick={() => dispatch ({type: "CHANGE_QUESTION"})}>Continuar</button>
   </div>
