@@ -6,3 +6,13 @@
     cursor: pointer;
     transition: .4s;
 }
+
+.option:hover {
+    background-color: rgb(141, 43, 232);
+    transition: .5s;
+}
+
+#options-container .option p {
+    margin: 0;
+    padding: 10px;
+}
