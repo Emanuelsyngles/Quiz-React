@@ -58,8 +58,9 @@ const quizReducer = (state, action) => {
 
                 return {
                     ...state,
-                    score: state.score + correctAnswer
-                }
+                    score: state.score + correctAnswer,
+                    answerSelected: option,
+                };
 
         default:
             return state;
