@@ -23,7 +23,7 @@ const Question = () => {
            option={option} 
            key={option} 
            answer={currentQuestion.answer}
-           selectOption={() => onSelectOption()}
+           selectOption={() => onSelectOption(option)}
           />
         ))}
       </div>
