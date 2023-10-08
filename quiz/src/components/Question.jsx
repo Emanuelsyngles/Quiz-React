@@ -12,7 +12,7 @@ const Question = () => {
     const onSelectOption = (option) => {
       dispatch({
         type: "CHECK_ANSWER", 
-        playload: {answer: currentQuestion.option, option},
+        playload: {answer: currentQuestion.answer, option},
       })
     };
 
