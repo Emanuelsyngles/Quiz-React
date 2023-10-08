@@ -7,8 +7,11 @@ import './Question.css';
 
 const Question = () => {
     const [quizState, dispatch] = useContext(QuizContext);
-
     const currentQuestion = quizState.questions[quizState.currentQuestion]
+
+    const selectOption = () => {
+      console.log("teste")
+    }
 
   return (
     <div id="question">
