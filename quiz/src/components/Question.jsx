@@ -9,9 +9,12 @@ const Question = () => {
     const [quizState, dispatch] = useContext(QuizContext);
     const currentQuestion = quizState.questions[quizState.currentQuestion]
 
-    const onSelectOption = () => {
-      console.log("teste")
-    }
+    const onSelectOption = (option) => {
+      dispatch({
+        type: "CHECK_ANSWER", 
+        playload: {answer: currentQuestion.option, option},
+      })
+    };
 
   return (
     <div id="question">

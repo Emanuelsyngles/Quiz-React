@@ -49,6 +49,7 @@ const quizReducer = (state, action) => {
             case "NEW_GAME":
                 return initialState;
 
+            case "CHECK_ANSWER"
         default:
             return state;
     }
