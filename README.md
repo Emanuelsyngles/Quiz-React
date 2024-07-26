@@ -12,10 +12,6 @@
  
  ## Ferramentas 🔧
 - [ReactJS](https://react.dev/)
-  
- ## Referêcias
-
- - [Matheus Battisti - Hora de Codar](https://www.youtube.com/@MatheusBattisti)
 
  - Desenvolvido por Emanuel syngles.
 
